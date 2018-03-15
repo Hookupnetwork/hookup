@@ -1,0 +1,100 @@
+Requirement Document - Page Data (Exclusive of Login, After Event Comments and Ratings)
+
+Page - 1 : Events List Page (Page Type : List)
+Top Panel : 
+i) Search Text box with Search Icon for Searching Events
+ii) Event Type Dropdown [By Default Event Type is All - User should be able to filter via Event Type]
+iii) Post an Event / Plan Button - Redirects to Page - 3 : Post an Event / Plan (Form Input)
+Events List - Repetition of :
+1. Image  - Event banner or Selfie
+2. Event Title
+3. Event Type
+4. User Details [Hosts/Participants] (Name/No. of participants/Short Desc.) with "Read more" link (which redirects to Page -2 : Full Event Details)
+5. From Date/Time
+6. To Date/Time
+7. Event Location (with a map icon to open Google maps if location is pinned)
+8. Description in short with "Read more" link (which redirects to Page -2 : Full Event Details)
+9. A Hookup Button on top right corner of the list item - which Redirects to Page - 4 : Place Hookup Request
+Any touch event over the list item Redirects to Page -2 : Full Event Details
+10. A Big Round + Icon in bottom right corner to enable User to post an Event / Plan - Redirects to Page - 3 : Post an Event / Plan (Form Input)
+
+
+Page -2 : Full Event Details (Page Type : Display)
+1. Image  - Event banner or Selfie
+2. Event Title
+3. Event Type
+4. User Details [Hosts/Participants] (Name/No. of participants/Short Desc.)
+5. From Date/Time
+6. To Date/Time
+7. Event Location (with a map icon to open Google maps if location is pinned)
+8. Full Description
+9. Additional Images (if any)
+10. A Hookup Button on top right corner of the list item - which redirects to Page - 4 : Place Hookup Request
+
+
+Page - 3 : Post an Event / Plan (Page Type : Form Input)
+1. Image  Upload - 1 Main Image - Event banner or Selfie
+2. Event Title - Text - (Max character : 60)
+3. Event Type - Dropdown
+4. User Details  - TextArea - [Hosts/Participants] (Name/No. of participants/Short Desc.)
+5. From Date/Time - Datepicker	(should be a Future Date from respecive Timezone)
+6. To Date/Time - Datepicker	(should be greater than From Date/Time)
+7. Event Location	(Address Line1 [Number & Street], Address Line2 [Place Details / Landmark], City[limited to Coimbatore as of now], Pincode, Google Maps Location)
+8. Full Description (Text Area)
+9. Additional Images (Maximum 5 as of now - Max size - 5 Mb each) (Optional)
+
+
+Page - 4 : Place Hookup Request (Page Type : Form Input)
+1. Image  Upload - 1 Main Image - Selfie
+2. Name(s) - TextBox
+3. Number of Participants - Dropdown with 1 to 10 and >10
+4. Requesters Description -  About them - Text Area
+5. Why interested in Event (optional) - Text Area
+6. Additional Images (Maximum 5 as of now - Max size - 5 Mb each) (Optional)
+
+
+Page - 5 : Hookup Requests For Me (Page Type : List)
+Repetition of :
+1. Selfie
+2. Requestor Names
+3. Number of Participants
+4. Requesters Description - in short - with "Read more" link (which redirects to Page -6 : Hookup Requests For Me - Full Details)
+5. Why interested in Event (optional) - in short - with "Read more" link (which redirects to Page -6 : Hookup Requests For Me - Full Details)
+6. With a button on top right corner - to Accept/Reject Hookup request
+
+
+Page - 6 : Hookup Requests For Me - Full Details (Page Type : Display)
+1. Selfie
+2. Requestor Names
+3. Number of Participants
+4. Requesters Description
+5. Why interested in Event (if any)
+6. Additional Images (if any)
+7. With a button on top right corner - to Accept/Reject Hookup request
+
+
+Page - 7 : My Hookup Requests Status (Page Type : List)
+Repetition of :
+1. Placed for Event
+2. Event Detail - in short
+3. Event posted User detail - in short
+4. My Detail given for request - in short
+5. My Main Image (Selfie) given for request
+6. Status - Accepted/Pending/Rejected
+
+
+App View : Tabbed Pane :
+Tab 1  :  Page - 1 : Events List Page (Page Type : List)		[Default Tab/Home]
+Tab 2  :  Page - 5 : Hookup Requests For Me (Page Type : List)
+Tab 3  :  Page - 7 : My Hookup Requests Status (Page Type : List)
+
+
+Event Type:
+1. Entertainment (Singing/Dancing/Drama/Stageshows/Movie/Music/Concert/Pubs etc.,)
+2. Trips (Trekking/Adventure/Excursion/Tour/Outings etc.,)
+3. Sports (Sportsmeets/Matches/Training/Practise etc.,)
+4. Food (Treats/Dinners/Foodfest/Buffets etc.,)
+5. Education (Studies/Coaching/Tutuion/Workshops/Seminars/IVs etc.,)
+6. Business (Expos/Promotions/Meetings/Startup meets/Business Talks etc.,)
+7. Causes (Fundrising/Social Awareness/Protests/Campaigns etc.,)
+8. Others
